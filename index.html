@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>iOS Inertial Scroll Bug</title>
+    
+    <style type="text/css" media="screen">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        div {
+            overflow-y: scroll;
+            -webkit-overflow-scrolling: touch;
+            height: 100%
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li>
+                When using the CSS attribute `-webkit-overflow-scrolling: touch`,
+                Mobile Safari sometimes sends touch events to the wrong DOM
+                elements while the user has initiated inertial scrolling.
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
